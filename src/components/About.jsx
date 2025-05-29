@@ -1,0 +1,30 @@
+import React from 'react'
+import about from '../../public/about.jpeg'
+import { ABOUT_TEXT } from '../constants'
+
+/**
+* @author
+* @function About
+**/
+
+export const About = (props) => {
+  return(
+    <div className='border-b border-neutral-900 pb-4'>
+        <h2 className='text-center mb-5 lg:my-20 text-4xl'>About <span className='text-neutral-300'>Me</span></h2>
+        <div className='flex flex-wrap-reverse'>
+            <div className='w-full lg:w-1/2'>
+                <div className='flex justify-center items-center'>
+                    <img className='w-56 sm:w-72 md:w-80 lg:w-96 rounded-2xl shadow-lg' src={about} alt="Mijanur" />
+                </div>
+            </div>
+            <div className='w-full lg:w-1/2'>
+                <div className='flex justify-center lg:justify-start'>
+                    <p className='my-4 max-w-xl mx-auto lg:mx-0 font-light tracking-tight text-xl'>
+                        {ABOUT_TEXT}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+   )
+  }
