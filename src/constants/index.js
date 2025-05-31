@@ -40,6 +40,24 @@ export const projectData = [
     previewLink: "https://currency-converter-ivory-sigma.vercel.app",
   },
   // add more projects here
+  {
+    id: 5,
+    title: "Currency Converter",
+    image: currency,
+    description: "Change from any currency to another.Contributed to the development of web applications using JavaScript, React.js, and Node.js. Managed databases and implemented data storage solutions using MongoDB. Worked closely with product managers to prioritize features and enhancements",
+    detailLink: "#",
+    previewLink: "https://currency-converter-ivory-sigma.vercel.app",
+  },
+  // add more projects here
+  {
+    id: 6,
+    title: "Currency Converter",
+    image: currency,
+    description: "Change from any currency to another.Contributed to the development of web applications using JavaScript, React.js, and Node.js. Managed databases and implemented data storage solutions using MongoDB. Worked closely with product managers to prioritize features and enhancements",
+    detailLink: "#",
+    previewLink: "https://currency-converter-ivory-sigma.vercel.app",
+  },
+  // add more projects here
 ];
 
 // export const EXPERIENCES = [

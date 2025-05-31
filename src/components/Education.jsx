@@ -8,7 +8,7 @@ import React from 'react'
 export const Education = (props) => {
   return(
     <div className='border-b border-neutral-900 py-4'>
-        <h2 className='text-center my-20 text-4xl'>Education</h2>
+        <h2 className='text-center my-20  text-4xl'>Education</h2>
     <div className='flex flex-col gap-8 justify-center px-18 py-5  items-start font-light'>
         <div className='relative text-base lg:text-2xl'>
         <span class="absolute -left-[13px] top-0 w-[4px] h-[45px] rounded-md bg-amber-600 border-2 border-gray-900"></span>

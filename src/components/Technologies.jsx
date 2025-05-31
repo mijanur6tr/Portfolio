@@ -10,8 +10,8 @@ import { SiNextdotjs, SiTailwindcss, SiMongodb, SiExpress, SiJavascript } from '
 
 export const Technologies = (props) => {
     return (
-        <div className='border-b border-neutral-900 py-4'>
-            <h2 className='text-center mb-5 lg:my-20 text-4xl'>Technologies</h2>
+        <div className='border-b border-neutral-900 py-4 mb-15'>
+            <h2 className='text-center mb-25 my-20 text-4xl'>Technologies</h2>
             <div className='flex flex-wrap justify-center items-center gap-4'>
                 <div className='text-7xl rounded-2xl p-4 border-4 border-neutral-800 text-orange-600'><FaHtml5 /></div>
                 <div className='text-7xl rounded-2xl p-4 border-4 border-neutral-800 text-blue-600'><FaCss3Alt /></div>

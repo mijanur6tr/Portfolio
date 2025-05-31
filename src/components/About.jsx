@@ -9,8 +9,8 @@ import { ABOUT_TEXT } from '../constants'
 
 export const About = (props) => {
   return(
-    <div className='border-b border-neutral-900 pb-4'>
-        <h2 className='text-center mb-5 lg:my-20 text-4xl'>About <span className='text-neutral-300'>Me</span></h2>
+    <div className='border-b border-neutral-900 pb-10'>
+        <h2 className='text-center mb-15 my-20 text-4xl'>About <span className='text-neutral-300'>Me</span></h2>
         <div className='flex flex-wrap-reverse'>
             <div className='w-full lg:w-1/2'>
                 <div className='flex justify-center items-center'>
