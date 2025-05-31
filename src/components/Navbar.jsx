@@ -1,26 +1,76 @@
-import React from 'react'
-import logo from '../../public/logo.png'
-import { FaGithub, FaLinkedin, FaTwitter, FaInstagram } from 'react-icons/fa';
+import React, { useState } from 'react';
+import logo from '../../public/logo.png';
+import { FaGithub, FaLinkedin, FaTwitter, FaInstagram, FaBars, FaTimes } from 'react-icons/fa';
+import { NavLink } from 'react-router-dom';
 
+export const Navbar = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
 
-/**
-* @author
-* @function Navbar
-**/
+  const toggleMenu = () => setMenuOpen(!menuOpen);
+  const closeMenu = () => setMenuOpen(false);
 
-export const Navbar = (props) => {
-  return(
-    <nav className='flex lg:mb-20 sm:mb-5 py-4 justify-between items-center '>
-            <div className='w-23'>
-                <img src={logo} alt="logo" />
-            </div>
-            <div className='text-3xl flex justify-center items-center gap-5'>
+  return (
+    <nav className="bg-slate-900 text-white py-3 px-5">
+      <div className="flex justify-between items-center flex-wrap">
+        {/* Logo */}
+        <div className="flex items-center gap-4">
+          <img src={logo} alt="logo" className="w-20 h-auto" />
+        </div>
 
-                <FaGithub/>
-                <FaInstagram/>
-                <FaLinkedin/>
-                <FaTwitter/>
-            </div>
+        {/* Desktop Nav + Social */}
+        <div className="hidden lg:flex justify-between items-center gap-10 ml-auto">
+          <div className="flex gap-6 text-xl">
+            <NavLink to="/" className={({ isActive }) => isActive ? "text-orange-300" : ""}>Home</NavLink>
+            <NavLink to="/projects" className={({ isActive }) => isActive ? "text-orange-300" : ""}>Projects</NavLink>
+            <NavLink to="/contact" className={({ isActive }) => isActive ? "text-orange-300" : ""}>Contact</NavLink>
+          </div>
+          <div className="flex gap-4 text-2xl ml-8">
+            <a href="https://github.com/mijanur6tr" target="_blank" rel="noreferrer">
+              <FaGithub className="hover:text-orange-400 transition" />
+            </a>
+            <a href="https://www.instagram.com/mijanur6tr/" target="_blank" rel="noreferrer">
+              <FaInstagram className="hover:text-orange-400 transition" />
+            </a>
+            <a href="https://www.linkedin.com/in/mijanur-rahman-9508682ba/" target="_blank" rel="noreferrer">
+              <FaLinkedin className="hover:text-orange-400 transition" />
+            </a>
+            <a href="https://x.com/mijanur6tr" target="_blank" rel="noreferrer">
+              <FaTwitter className="hover:text-orange-400 transition" />
+            </a>
+          </div>
+        </div>
+
+        {/* Mobile Social + Hamburger */}
+        <div className="lg:hidden flex items-center gap-4 ml-auto text-2xl">
+          {/* Social Icons */}
+          <a href="https://github.com/mijanur6tr" target="_blank" rel="noreferrer">
+            <FaGithub className="hover:text-orange-400 transition" />
+          </a>
+          <a href="https://www.instagram.com/mijanur6tr/" target="_blank" rel="noreferrer">
+            <FaInstagram className="hover:text-orange-400 transition" />
+          </a>
+          <a href="https://www.linkedin.com/in/mijanur-rahman-9508682ba/" target="_blank" rel="noreferrer">
+            <FaLinkedin className="hover:text-orange-400 transition" />
+          </a>
+          <a href="https://x.com/mijanur6tr" target="_blank" rel="noreferrer">
+            <FaTwitter className="hover:text-orange-400 transition" />
+          </a>
+
+          {/* Hamburger */}
+          <button onClick={toggleMenu}>
+            {menuOpen ? <FaTimes /> : <FaBars />}
+          </button>
+        </div>
+      </div>
+
+      {/* Mobile Dropdown Menu */}
+      {menuOpen && (
+        <div className="lg:hidden mt-4 flex flex-col gap-4 text-lg bg-gray-800 p-5 rounded-xl">
+          <NavLink to="/" onClick={closeMenu} className={({ isActive }) => isActive ? "text-orange-500" : ""}>Home</NavLink>
+          <NavLink to="/projects" onClick={closeMenu} className={({ isActive }) => isActive ? "text-orange-500" : ""}>Projects</NavLink>
+          <NavLink to="/contact" onClick={closeMenu} className={({ isActive }) => isActive ? "text-orange-500" : ""}>Contact</NavLink>
+        </div>
+      )}
     </nav>
-   )
-  }
+  );
+};

@@ -9,7 +9,7 @@ import { HERO_CONTENT } from '../constants'
 export const Hero = (props) => {
   return (
     <div>
-      <div className='border-b border-neutral-900 lg:mb-4 mb-2 px-6 py-5 lg:py-20 lg:px-10 flex flex-col lg:flex-row gap-10 items-center'>
+      <div className='border-b border-neutral-900 lg:mb-4 mb-2 px-6 py-5 lg:py-20 lg:px-15 flex flex-col lg:flex-row gap-15 items-center'>
         
         {/* Text Section (comes first) */}
         <div className='w-full lg:w-1/2 text-center lg:text-left'>
@@ -26,7 +26,7 @@ export const Hero = (props) => {
 
         {/* Image Section (comes second) */}
         <div className='w-full lg:w-1/2 flex justify-center'>
-          <img className='w-58 sm:w-74 md:w-82 lg:w-98 rounded-2xl shadow-lg' src={profile} alt="Mijanur Rahman" />
+          <img className='w-full lg:w-120 rounded-2xl shadow-lg' src={profile} alt="Mijanur Rahman" />
         </div>
       </div>
     </div>

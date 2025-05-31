@@ -11,10 +11,10 @@ export const About = (props) => {
   return(
     <div className='border-b border-neutral-900 pb-10'>
         <h2 className='text-center mb-15 my-20 text-4xl'>About <span className='text-neutral-300'>Me</span></h2>
-        <div className='flex flex-wrap-reverse'>
+        <div className='flex flex-wrap-reverse '>
             <div className='w-full lg:w-1/2'>
-                <div className='flex justify-center items-center'>
-                    <img className='w-56 sm:w-72 md:w-80 lg:w-96 rounded-2xl shadow-lg' src={about} alt="Mijanur" />
+                <div className='flex justify-center items-center mt-6 lg:mt-0'>
+                    <img className='w-3/4 lg:w-96 rounded-2xl shadow-lg' src={about} alt="Mijanur" />
                 </div>
             </div>
             <div className='w-full lg:w-1/2'>
