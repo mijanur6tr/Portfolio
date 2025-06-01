@@ -10,7 +10,7 @@ export const Navbar = () => {
   const closeMenu = () => setMenuOpen(false);
 
   return (
-    <nav className="bg-slate-900 text-white py-3 px-5">
+    <nav className="bg-slate-900 text-white font-light py-2 px-5">
       <div className="flex justify-between items-center flex-wrap">
         {/* Logo */}
         <div className="flex items-center gap-4">
@@ -19,7 +19,7 @@ export const Navbar = () => {
 
         {/* Desktop Nav + Social */}
         <div className="hidden lg:flex justify-between items-center gap-10 ml-auto">
-          <div className="flex gap-6 text-xl">
+          <div className="flex gap-6 text-lg">
             <NavLink to="/" className={({ isActive }) => isActive ? "text-orange-300" : ""}>Home</NavLink>
             <NavLink to="/projects" className={({ isActive }) => isActive ? "text-orange-300" : ""}>Projects</NavLink>
             <NavLink to="/contact" className={({ isActive }) => isActive ? "text-orange-300" : ""}>Contact</NavLink>

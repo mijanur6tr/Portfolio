@@ -1,16 +1,36 @@
 import React from 'react';
 import { projectData } from '../constants';
+import { motion, useAnimation } from "framer-motion";
+// import { useEffect } from "react";
 
 const Projects = ({ limit }) => {
-  // If a limit is passed, slice the projectData; otherwise, show all
+
   const displayedProjects = limit ? projectData.slice(0, limit) : projectData;
 
+  //     const controls = useAnimation();
+
+  // useEffect(() => {
+  //   controls.start({ scale:1, opacity: 1 });
+  // }, []);
+
   return (
-    <div className="py-5 px-10 mb-10 lg:mb-15 lg:px-20 min-h-screen">
-      <h2 className="text-center pb-5 my-10 lg:my-15 text-4xl">My Projects</h2>
+
+    <div className="py-5 px-10 mb-10 lg:mb-15  lg:px-20 min-h-screen">
+      <motion.h2
+        initial={{ y: 45, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ duration: 1, delay: .2 }}
+        className="text-center pb-5 my-10 lg:my-15 text-4xl">My Projects</motion.h2>
+
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-20">
         {displayedProjects.map(project => (
-          <div key={project.id} className="bg-white rounded-2xl shadow-md overflow-hidden flex flex-col">
+          <motion.div
+            initial={{ scale: .9, opacity: 0.5 }}
+            whileInView={{ scale: 1, opacity: 1 }}
+            transition={{ duration: 1, delay: .2 }}
+            viewport={{ once: false, amount: 0.2 }}
+            key={project.id}
+            className="bg-white rounded-2xl shadow-md overflow-hidden flex flex-col">
             <img src={project.image} alt={project.title} className="w-full h-48 object-cover" />
             <div className="p-4 flex-1">
               <h3 className="text-xl text-amber-600 mb-2">{project.title}</h3>
@@ -20,9 +40,28 @@ const Projects = ({ limit }) => {
               <a href={project.detailLink} className="bg-blue-600 text-white px-4 py-2 rounded-xl hover:bg-blue-700 transition">Detail</a>
               <a href={project.previewLink} className="bg-green-600 text-white px-4 py-2 rounded-xl hover:bg-green-700 transition">Preview</a>
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
+
+      {limit && (
+        <div className="text-center mt-16">
+          <motion.p
+            initial={{ x: -50, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{ duration: 1, delay: .2 }}
+            className="mb-4 font-light text-xl text-gray-300">You can check out more projects that I have built.</motion.p>
+        
+          <motion.a
+            initial={{ y: 25, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{ duration: 1, delay: .2 }}
+            href="/projects" className="inline-block bg-amber-600 text-white px-4 py-2 rounded-xl hover:bg-amber-700">
+            See more
+          </motion.a>
+        </div>
+      )}
+
     </div>
   );
 };
