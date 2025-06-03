@@ -31,12 +31,14 @@ export const Hero = (props) => {
              className='w-full lg:w-1/2 text-center lg:text-left'>
           <motion.h1 
           variants={container(0)}
+          viewport={{once:true}}
           
           className='text-4xl sm:text-6xl lg:text-8xl font-thin tracking-tight pb-8'>
             Mijanur Rahman
           </motion.h1>
           <motion.p
             variants={container(.3)}
+            viewport={{once:true}}
          
             
           className='bg-gradient-to-r from-pink-300 via-slate-500 to-purple-300 text-transparent text-2xl sm:text-3xl lg:text-4xl tracking-tight bg-clip-text'>
@@ -44,6 +46,7 @@ export const Hero = (props) => {
           </motion.p>
           <motion.p 
          variants={container(.6)}
+         viewport={{once:true}}
           className='my-4 max-w-xl mx-auto lg:mx-0 font-light tracking-tight text-xl'>
             {HERO_CONTENT}
           </motion.p>
@@ -55,6 +58,7 @@ export const Hero = (props) => {
           initial={{x:200,opacity:0}}
           animate={{x:0,opacity:1}}
           transition={{duration:1.5,delay:0}}
+          viewport={{once:true}}
           className='w-full lg:w-120 rounded-2xl shadow-lg' src={profile} alt="Mijanur Rahman" />
         </div>
       </div>

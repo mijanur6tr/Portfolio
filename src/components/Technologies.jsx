@@ -33,16 +33,19 @@ export const Technologies = (props) => {
             initial={{ y: 45, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}
                 transition={{ duration: 1, delay: .2 }}
+                viewport={{once:true}}
             className='text-center mb-25 my-20 text-4xl'>Technologies</motion.h2>
             <motion.div
             initial={{x:-100}}
             whileInView={{x:0}}
             transition={{duration:1}}
+            viewport={{once:true}}
             className='flex flex-wrap justify-center items-center gap-4'>
                 <motion.div 
                 variants={icon(2.2)}
                 initial="initial"
                 animate="animate"
+                
                 className='text-7xl rounded-2xl p-4 border-4 border-neutral-800 text-orange-600'><FaHtml5 /></motion.div >
                 <motion.div 
                 variants={icon(3.2)}

@@ -1,6 +1,10 @@
 
 import todo from "../../public/todo.png"
 import currency from "../../public/currency.png"
+import tic from "../../public/tic.png"
+import rock from "../../public/rock.png"
+import netflix from "../../public/netflix.png"
+import spotify from "../../public/spotify.png"
 
 export const HERO_CONTENT = `I am a passionate full stack developer with a knack for crafting robust and scalable web applications. With 5 years of hands-on experience, I have honed my skills in front-end technologies like React and Next.js, as well as back-end technologies like Node.js, MySQL, PostgreSQL, and MongoDB. `;
 
@@ -25,32 +29,32 @@ export const projectData = [
   },
   {
     id: 3,
-    title: "Currency Converter",
-    image: currency,
+    title: "Tic-Tac-Toe Game",
+    image: tic,
     description: "Change from any currency to another.Designed and developed user interfaces for web applications using Next.js and React. Worked closely ...",
     detailLink: "#",
     previewLink: "https://currency-converter-ivory-sigma.vercel.app",
   },
   {
     id: 4,
-    title: "Currency Converter",
-    image: currency,
+    title: "Rock-Paper-Scissors Game",
+    image: rock,
     description: "Change from any currency to another.Contributed to the development of web applications using JavaScript, React.js, and Node.js...",
     detailLink: "#",
     previewLink: "https://currency-converter-ivory-sigma.vercel.app",
   },
   {
     id: 5,
-    title: "Currency Converter",
-    image: currency,
+    title: "Netflix Clone Project",
+    image: netflix,
     description: "Change from any currency to another.Contributed to the development of web applications using JavaScript, React.js, and Node.js...",
     detailLink: "#",
     previewLink: "https://currency-converter-ivory-sigma.vercel.app",
   },
   {
     id: 6,
-    title: "Currency Converter",
-    image: currency,
+    title: "Spotify Clone Project",
+    image: spotify,
     description: "Change from any currency to another.Contributed to the development of web applications using JavaScript, React.js, and Node.js...",
     detailLink: "#",
     previewLink: "https://currency-converter-ivory-sigma.vercel.app",

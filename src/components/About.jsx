@@ -16,6 +16,7 @@ export const About = (props) => {
                 initial={{ y: 40, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}
                 transition={{ duration: 1, delay: .2 }}
+                viewport={{once:true}}
                 className='text-center mb-15 my-20 text-4xl'>About <span className='text-neutral-300'>Me</span></motion.h2>
             <div className='flex flex-wrap-reverse '>
                 <div className='w-full lg:w-1/2'>
@@ -24,6 +25,7 @@ export const About = (props) => {
                             initial={{ x: -100, opacity: 0 }}
                             whileInView={{ x: 0, opacity: 1 }}
                             transition={{ duration: 1, delay: .2 }}
+                            viewport={{once:true}}
                             className='w-3/4 lg:w-96 rounded-2xl shadow-lg' src={about} alt="Mijanur" />
                     </div>
                 </div>
@@ -33,6 +35,7 @@ export const About = (props) => {
                             initial={{ x: 200, opacity: 0 }}
                             whileInView={{ x: 0, opacity: 1 }}
                             transition={{ duration: 1, delay: .2}}
+                            viewport={{once:true}}
                             className='my-4 max-w-xl mx-auto lg:mx-0 font-light tracking-tight text-xl'>
                             {ABOUT_TEXT}
                         </motion.p>

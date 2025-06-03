@@ -1,6 +1,7 @@
 import React from 'react';
 import { projectData } from '../constants';
 import { motion, useAnimation } from "framer-motion";
+import { Link } from "react-router-dom";
 // import { useEffect } from "react";
 
 const Projects = ({ limit }) => {
@@ -20,6 +21,7 @@ const Projects = ({ limit }) => {
         initial={{ y: 45, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 1, delay: .2 }}
+        viewport={{once:true}}
         className="text-center pb-5 my-10 lg:my-15 text-4xl">My Projects</motion.h2>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-20">
@@ -28,7 +30,8 @@ const Projects = ({ limit }) => {
             initial={{ scale: .9, opacity: 0.5 }}
             whileInView={{ scale: 1, opacity: 1 }}
             transition={{ duration: 1, delay: .2 }}
-            viewport={{ once: false, amount: 0.2 }}
+            viewport={{once:true}}
+            
             key={project.id}
             className="bg-white rounded-2xl shadow-md overflow-hidden flex flex-col">
             <img src={project.image} alt={project.title} className="w-full h-48 object-cover" />
@@ -50,15 +53,22 @@ const Projects = ({ limit }) => {
             initial={{ x: -50, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
             transition={{ duration: 1, delay: .2 }}
+            viewport={{once:true}}
             className="mb-4 font-light text-xl text-gray-300">You can check out more projects that I have built.</motion.p>
         
-          <motion.a
-            initial={{ y: 25, opacity: 0 }}
-            whileInView={{ y: 0, opacity: 1 }}
-            transition={{ duration: 1, delay: .2 }}
-            href="/projects" className="inline-block bg-amber-600 text-white px-4 py-2 rounded-xl hover:bg-amber-700">
-            See more
-          </motion.a>
+         <motion.div
+  initial={{ y: 25, opacity: 0 }}
+  whileInView={{ y: 0, opacity: 1 }}
+  transition={{ duration: 1, delay: 0.2 }}
+  viewport={{ once: true }}
+>
+  <Link
+    to="/projects"
+    className="inline-block bg-amber-600 text-white px-4 py-2 rounded-xl hover:bg-amber-700 transition-colors duration-300"
+  >
+    See more
+  </Link>
+</motion.div>
         </div>
       )}
 

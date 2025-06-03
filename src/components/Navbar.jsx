@@ -20,9 +20,9 @@ export const Navbar = () => {
         {/* Desktop Nav + Social */}
         <div className="hidden lg:flex justify-between items-center gap-10 ml-auto">
           <div className="flex gap-6 text-lg">
-            <NavLink to="/" className={({ isActive }) => isActive ? "text-orange-300" : ""}>Home</NavLink>
-            <NavLink to="/projects" className={({ isActive }) => isActive ? "text-orange-300" : ""}>Projects</NavLink>
-            <NavLink to="/contact" className={({ isActive }) => isActive ? "text-orange-300" : ""}>Contact</NavLink>
+            <NavLink to="/" className={({ isActive }) => isActive ? "text-green-400 transition-colors duration-300" : " hover:text-amber-200 transition-colors duration-300 "}>Home</NavLink>
+            <NavLink to="/projects" className={({ isActive }) => isActive ? "text-green-400 transition-colors duration-300" : "hover:text-amber-200 transition-colors duration-300 "}>Projects</NavLink>
+            <NavLink to="/contact" className={({ isActive }) => isActive ? "text-green-400 transition-colors duration-300" : "hover:text-amber-200 transition-colors duration-300 "}>Contact</NavLink>
           </div>
           <div className="flex gap-4 text-2xl ml-8">
             <a href="https://github.com/mijanur6tr" target="_blank" rel="noreferrer">
@@ -64,13 +64,19 @@ export const Navbar = () => {
       </div>
 
       {/* Mobile Dropdown Menu */}
-      {menuOpen && (
-        <div className="lg:hidden mt-4 flex flex-col gap-4 text-lg bg-gray-800 p-5 rounded-xl">
-          <NavLink to="/" onClick={closeMenu} className={({ isActive }) => isActive ? "text-orange-500" : ""}>Home</NavLink>
-          <NavLink to="/projects" onClick={closeMenu} className={({ isActive }) => isActive ? "text-orange-500" : ""}>Projects</NavLink>
-          <NavLink to="/contact" onClick={closeMenu} className={({ isActive }) => isActive ? "text-orange-500" : ""}>Contact</NavLink>
+   <div
+  className={`lg:hidden transition-all duration-500 ease-in-out transform ${
+    menuOpen
+      ? 'max-h-60 opacity-100 scale-100 mt-4 py-5'
+      : 'max-h-0 opacity-0 scale-95 py-0'
+  } overflow-hidden flex flex-col gap-4 text-lg bg-gray-800 px-5 rounded-xl`}
+>
+
+          <NavLink to="/" onClick={closeMenu} className={({ isActive }) => isActive ? "text-green-400 transition-colors duration-300" : "hover:text-amber-200 transition-colors duration-300 "}>Home</NavLink>
+          <NavLink to="/projects" onClick={closeMenu} className={({ isActive }) => isActive ? "text-green-400 transition-colors duration-300" : "hover:text-amber-200 transition-colors duration-300 "}>Projects</NavLink>
+          <NavLink to="/contact" onClick={closeMenu} className={({ isActive }) => isActive ? "text-green-400 transition-colors duration-300" : "hover:text-amber-200 transition-colors duration-300 "}>Contact</NavLink>
         </div>
-      )}
+      
     </nav>
   );
 };

@@ -13,6 +13,7 @@ export const Education = (props) => {
         initial={{ y: 45, opacity: 0 }}
                 whileInView={{ y: 0, opacity: 1 }}
                 transition={{ duration: 1, delay: .2 }}
+                viewport={{once:true}}
         className='text-center my-20  text-4xl'>Education</motion.h2>
     <div className='flex flex-col gap-8 justify-center px-8 lg:px-35 py-5  items-start font-light'>
 
@@ -20,6 +21,7 @@ export const Education = (props) => {
         whileInView={{x:0,opacity:1}}
         initial={{x:-100,opacity:0}}
         transition={{duration:1}}
+        viewport={{once:true}}
          
         className='relative text-base lg:text-2xl'>
         <span class="absolute -left-[13px] top-0 w-[8px] h-[45px] rounded-md bg-amber-600 border-2 border-gray-900"></span>
@@ -33,6 +35,7 @@ export const Education = (props) => {
          whileInView={{x:0,opacity:1}}
         initial={{x:-100,opacity:0}}
         transition={{duration:1,delay:.2}}
+        viewport={{once:true}}
         
         className='relative text-base lg:text-2xl'>
         <span class="absolute -left-[13px] top-0 w-[8px] h-[45px] rounded-md bg-amber-600 border-2 border-gray-900"></span>
@@ -46,6 +49,7 @@ export const Education = (props) => {
          whileInView={{x:0,opacity:1}}
         initial={{x:-100,opacity:0}}
         transition={{duration:1,delay:.4}}
+        viewport={{once:true}}
          
         className='relative text-base lg:text-2xl'>
         <span class="absolute -left-[13px] top-0 w-[8px] h-[45px] rounded-md bg-amber-600 border-2 border-gray-900"></span>

@@ -62,7 +62,7 @@ const ScrollToTop = () => {
           cx="35"
           cy="35"
           r={radius}
-          stroke="#F59E0B"
+          stroke="#13AA52"
           strokeWidth="4"
           fill="transparent"
           strokeDasharray={circumference}
@@ -74,7 +74,7 @@ const ScrollToTop = () => {
 
       <button
         onClick={scrollToTop}
-        className="absolute inset-0 flex items-center justify-center text-amber-400 text-2xl font-light"
+        className="absolute inset-0 flex items-center justify-center text-green-400 text-2xl font-light"
       >
         M
       </button>
