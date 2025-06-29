@@ -16,7 +16,7 @@ const Projects = ({ limit }) => {
 
   return (
 
-    <div className="py-5 px-10 mb-10 lg:mb-15  lg:px-20 min-h-screen">
+    <div className="py-5 px-10 mb-10 lg:mb-15  lg:px-20 xl:px-30 min-h-screen">
       <motion.h2
         initial={{ y: 45, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
@@ -24,7 +24,7 @@ const Projects = ({ limit }) => {
         viewport={{once:true}}
         className="text-center pb-5 my-10 lg:my-15 text-4xl">My Projects</motion.h2>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-20">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-15 xl:gap-20">
         {displayedProjects.map(project => (
           <motion.div
             initial={{ scale: .9, opacity: 0.5 }}

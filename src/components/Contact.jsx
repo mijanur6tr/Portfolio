@@ -33,17 +33,17 @@ export const Contact = (props) => {
   return (
     <motion.div
       initial={{ scale: .9 }}
-      animate={{ scale:1 }}
-      transition={{ duration: 1}}
-      viewport={{once:true}}
+      animate={{ scale: 1 }}
+      transition={{ duration: 1 }}
+      viewport={{ once: true }}
       className="max-w-2xl md:mx-auto mx-10  my-20 p-8 text-white shadow-lg rounded-lg animated-gradient"
     >
 
-        <div className="star"></div>
-  <div className="star"></div>
-  <div className="star"></div>
-  <div className="star"></div>
-  <div className="star"></div>
+      <div className="star"></div>
+      <div className="star"></div>
+      <div className="star"></div>
+      <div className="star"></div>
+      <div className="star"></div>
       <h2 className="bg-gradient-to-r from-pink-500 via-slate-300 to-purple-600 text-transparent  text-3xl lg:text-4xl tracking-tight bg-clip-text  font-bold mb-5 text-center">Feel free to contact me.</h2>
       <p className="text-center text-gray-300 mb-6">
         Got a question, proposal, or just want to say hello? Fill out the form below and I’ll get back to you as soon as possible.

@@ -6,16 +6,17 @@ import rock from "../../public/rock.png"
 import netflix from "../../public/netflix.png"
 import spotify from "../../public/spotify.png"
 
-export const HERO_CONTENT = `I am a passionate full stack developer with a knack for crafting robust and scalable web applications. With 5 years of hands-on experience, I have honed my skills in front-end technologies like React and Next.js, as well as back-end technologies like Node.js, MySQL, PostgreSQL, and MongoDB. `;
+export const HERO_CONTENT = `I Build High-Impact, Fast, and Modern Web Solutions.From idea to launch, I craft scalable websites and full-stack applications that drive business results.
+Let’s create something your users will love. `;
 
-export const ABOUT_TEXT = `I am a dedicated and versatile full stack developer with a passion for creating efficient and user-friendly web applications. With 5 years of professional experience, I have worked with a variety of technologies, including React, Next.js, Node.js, MySQL, PostgreSQL, and MongoDB. My journey in web development began with a deep curiosity for how things work, and it has evolved into a career where I continuously strive to learn and adapt to new challenges.`;
+export const ABOUT_TEXT = `I’m an undergraduate student at KUET and a passionate full-stack web developer.I specialize in React, Next.js, and Tailwind CSS to create responsive, accessible, and modern user interfaces. On the backend, I work with Node.js, Express, and MongoDB to develop robust APIs and handle complex database operations. I write clean, production-level code and follow best practices to ensure performance, scalability, and maintainability.  I’m experienced in state management with Redux and React Query, and use server-side rendering with Next.js to boost SEO and performance.I’d love the opportunity to help make your online presence elegant, impactful, and effective.`;
 
 export const projectData = [
   {
     id: 1,
     title: "Todo App",
     image: todo, // replace with your project image URL
-    description: "A todo application for daily using purpose.Contributed to the development of web applications using JavaScript, React.js, and Node.js... ",
+    description: "A todo application for daily using purpose.Contributed to the development ...",
     detailLink: "#",
     previewLink: "https://react-to-do-bice-five.vercel.app",
   },
@@ -23,7 +24,7 @@ export const projectData = [
     id: 2,
     title: "Currency Converter",
     image: currency,
-    description: "Change from any currency to another.Led a team in developing and maintaining web applications using JavaScript, React.js, and Node.js....",
+    description: "Change from any currency to another.Led a team in developing...",
     detailLink: "#",
     previewLink: "https://currency-converter-ivory-sigma.vercel.app",
   },
@@ -31,7 +32,7 @@ export const projectData = [
     id: 3,
     title: "Tic-Tac-Toe Game",
     image: tic,
-    description: "Change from any currency to another.Designed and developed user interfaces for web applications using Next.js and React. Worked closely ...",
+    description: "Change from any currency to another.Designed and developed ....",
     detailLink: "#",
     previewLink: "https://currency-converter-ivory-sigma.vercel.app",
   },
