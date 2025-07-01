@@ -21,29 +21,57 @@ const Projects = ({ limit }) => {
         initial={{ y: 45, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 1, delay: .2 }}
-        viewport={{once:true}}
+        viewport={{ once: true }}
         className="text-center pb-5 my-10 lg:my-15 text-4xl">My Projects</motion.h2>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-15 xl:gap-20">
         {displayedProjects.map(project => (
           <motion.div
-            initial={{ scale: .9, opacity: 0.5 }}
+            initial={{ scale: 0.95, opacity: 0.7 }}
             whileInView={{ scale: 1, opacity: 1 }}
-            transition={{ duration: 1, delay: .2 }}
-            viewport={{once:true}}
-            
+            whileHover={{ scale: 1.03 }}
+            transition={{ duration: 0.1, ease: "easeInOut" }}
+            viewport={{ once: true }}
             key={project.id}
-            className="bg-white rounded-2xl shadow-md overflow-hidden flex flex-col">
-            <img src={project.image} alt={project.title} className="w-full h-48 object-cover" />
-            <div className="p-4 flex-1">
-              <h3 className="text-xl text-amber-600 mb-2">{project.title}</h3>
-              <p className="text-gray-600 text-sm">{project.description}</p>
+            className="bg-white rounded-3xl shadow-lg overflow-hidden flex flex-col border border-gray-100 hover:shadow-2xl transition-all duration-300 p-5"
+          >
+            {/* Image with soft bottom shadow */}
+            <div className="relative">
+              <img
+                src={project.image}
+                alt={project.title}
+                className="w-full h-52 object-cover rounded-2xl shadow-[0_8px_14px_-6px_rgba(0,0,0,0.15)]"
+              />
             </div>
-            <div className="flex justify-between px-4 pb-4">
-              <a href={project.detailLink} className="bg-blue-600 text-white px-4 py-2 rounded-xl hover:bg-blue-700 transition">Detail</a>
-              <a href={project.previewLink} className="bg-green-600 text-white px-4 py-2 rounded-xl hover:bg-green-700 transition">Preview</a>
+
+            {/* Content */}
+            <div className="mt-4 flex-1 flex flex-col justify-between">
+              <h3 className="text-xl font-semibold text-slate-800 mb-1">{project.title}</h3>
+              <p className="text-gray-500 tracking-tight text-sm mb-4 leading-relaxed">{project.cardDescription}</p>
+
+              <div className="flex justify-between mt-auto">
+                <Link
+                  to={`/projects/${project.id}`}                
+                  rel="noopener noreferrer"
+                  className="bg-gradient-to-r from-indigo-600 to-purple-600 text-white px-4 py-2 rounded-xl text-sm font-medium hover:opacity-90 transition"
+                >
+                  Detail
+                </Link>
+                <a
+                  href={project.previewLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-gradient-to-r from-emerald-600 to-green-500 text-white px-4 py-2 rounded-xl text-sm font-medium hover:opacity-90 transition"
+                >
+                  Preview
+                </a>
+              </div>
             </div>
           </motion.div>
+
+
+
+
         ))}
       </div>
 
@@ -53,22 +81,23 @@ const Projects = ({ limit }) => {
             initial={{ x: -50, opacity: 0 }}
             whileInView={{ x: 0, opacity: 1 }}
             transition={{ duration: 1, delay: .2 }}
-            viewport={{once:true}}
-            className="mb-4 font-light text-xl text-gray-300">You can check out more projects that I have built.</motion.p>
-        
-         <motion.div
-  initial={{ y: 25, opacity: 0 }}
-  whileInView={{ y: 0, opacity: 1 }}
-  transition={{ duration: 1, delay: 0.2 }}
-  viewport={{ once: true }}
->
-  <Link
-    to="/projects"
-    className="inline-block bg-amber-600 text-white px-4 py-2 rounded-xl hover:bg-amber-700 transition-colors duration-300"
-  >
-    See more
-  </Link>
-</motion.div>
+            viewport={{ once: true }}
+            className="mb-4 font-light text-xl text-gray-300">Check out more projects that I have built.</motion.p>
+
+          <motion.div
+            initial={{ y: 25, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{ duration: 1, delay: 0.2 }}
+            viewport={{ once: true }}
+          >
+            <Link
+              to="/projects"
+              className="inline-block text-white px-4 py-2 rounded-xl bg-gradient-to-r from-amber-500 to-amber-700 hover:from-amber-600 hover:to-amber-800 transition-colors duration-300"
+
+            >
+              See more
+            </Link>
+          </motion.div>
         </div>
       )}
 

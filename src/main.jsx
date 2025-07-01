@@ -8,6 +8,8 @@ import Projects from "./components/Projects.jsx"
 import {Contact} from "./components/Contact.jsx"
 import { Home } from './components/Home.jsx'
 
+import Details from "./components/Details.jsx"
+
 const route = createBrowserRouter([
   {
     path:"/",
@@ -19,11 +21,15 @@ const route = createBrowserRouter([
       },
       {
         path:"/projects",
-        element:<Projects/>
+        element:<Projects/>,
       },
       {
         path:"/contact",
         element:<Contact/>
+      },
+      {
+        path:"/projects/:id",
+        element:<Details/>
       },
      
     ]

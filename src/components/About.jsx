@@ -57,16 +57,16 @@ export const About = (props) => {
                             whileInView={{ x: 0, opacity: 1 }}
                             transition={{ duration: 1, delay: .2 }}
                             viewport={{ once: true }}
-                            className='my-4 lg:my-2 max-w-xl mx-auto lg:mx-0 font-extralight  text-xl'
+                            className='my-4 lg:my-2 max-w-xl mx-auto lg:mx-0 font-extralight tracking-tight text-center lg:text-left text-xl'
                         >
                             {ABOUT_TEXT}
                         </motion.p>
 
                         {/* Contact Me Button for large devices */}
                         <motion.div
-                            initial={{ y: 20, opacity: 0 }}
-                            whileInView={{ y: 0, opacity: 1 }}
-                            transition={{ duration: 0.8, delay: 0.4 }}
+                            initial={{ x: 200, opacity: 0 }}
+                            whileInView={{ x: 0, opacity: 1 }}
+                            transition={{ duration: 1, delay: 0.2 }}
                             viewport={{ once: true }}
                             className='mt-4  justify-center hidden lg:flex'
                         >

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import logo from '../../public/logo.png';
 import { FaGithub, FaLinkedin, FaTwitter, FaInstagram, FaBars, FaTimes } from 'react-icons/fa';
-import { NavLink } from 'react-router-dom';
+import { NavLink,Link } from 'react-router-dom';
 
 export const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -14,7 +14,11 @@ export const Navbar = () => {
       <div className="flex justify-between items-center flex-wrap">
         {/* Logo */}
         <div className="flex items-center gap-4">
+          <Link
+          to="/"
+          >
           <img src={logo} alt="logo" className="w-20 h-auto" />
+          </Link>
         </div>
 
         {/* Desktop Nav + Social */}

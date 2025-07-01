@@ -70,7 +70,7 @@ export const Footer = (props) => {
         >
           <h3 className="text-lg font-semibold text-white mb-2">Contact</h3>
           <p className="text-sm text-gray-400">WhatsApp: 01642674330</p>
-          <p className="text-sm text-gray-400">Phone: 017642674330</p>
+          <p className="text-sm text-gray-400">Phone: +8801642674330</p>
           <p className="text-sm text-gray-400">Email: mijanur6tr123@gmail.com</p>
         </motion.div>
       </div>
