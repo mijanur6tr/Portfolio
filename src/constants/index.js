@@ -8,7 +8,15 @@ import Shuto from "../../public/Shuto-Shoilo.png";
 export const HERO_CONTENT = `I Build High-Impact, Fast, and Modern Web Solutions.From idea to launch, I craft scalable websites and full-stack applications that drive business results.
 Let’s create something your users will love. `;
 
-export const ABOUT_TEXT = `I’m an undergraduate student at KUET and a passionate full-stack web developer.I specialize in React, Next.js, and Tailwind CSS to create responsive, accessible, and modern user interfaces. On the backend, I work with Node.js, Express, and MongoDB to develop robust APIs and handle complex database operations. I write clean, production-level code and follow best practices to ensure performance, scalability, and maintainability.  I’m experienced in state management with Redux and React Query, and use server-side rendering with Next.js to boost SEO and performance.I’d love the opportunity to help make your online presence elegant, impactful, and effective.`;
+export const ABOUT_TEXT = `❖ Full Stack Intern | Yolast (May - July 2025)
+
+● Designed and implemented end-to-end authentication systems for production-ready flows.
+● Built role-based authorization for multiple user types (users, affiliates, service providers, multi-level admins).
+● Developed secure flows including custom registration, Google OAuth, OTP-based reset password, and user data persistence.
+● Integrated Razorpay Payment Gateway to handle transactions, subscription logic, and order validations.
+● Managed and debugged complex application structures.
+
+Key Impact: Strengthened auth security, streamlined user onboarding, and ensured secure payment handling.`;
 
 export const projectData = [
   {

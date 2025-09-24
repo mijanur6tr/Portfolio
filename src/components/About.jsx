@@ -1,6 +1,5 @@
 import React from 'react'
 import about from '../../public/about.jpeg'
-import { ABOUT_TEXT } from '../constants'
 import { motion } from "framer-motion"
 import { Link } from 'react-router-dom'
 
@@ -14,7 +13,7 @@ export const About = (props) => {
                 viewport={{ once: true }}
                 className='text-center mb-15 my-20 text-4xl'
             >
-                About <span className='text-neutral-300'>Me</span>
+                My <span className='text-neutral-300'>Experience</span>
             </motion.h2>
 
             <div className='flex flex-wrap-reverse'>
@@ -52,17 +51,48 @@ export const About = (props) => {
                 {/* Text + Button Section */}
                 <div className='w-full lg:w-1/2'>
                     <div className='flex flex-col  gap-15 justify-center items-center lg:items-start'>
-                        <motion.p
-                            initial={{ x: 200, opacity: 0 }}
-                            whileInView={{ x: 0, opacity: 1 }}
-                            transition={{ duration: 1, delay: .2 }}
-                            viewport={{ once: true }}
-                            className='my-4 lg:my-2 max-w-xl mx-auto lg:mx-0 font-extralight tracking-tight text-center lg:text-left text-xl'
-                        >
-                            {ABOUT_TEXT}
-                        </motion.p>
+                        <div className='w-full '>
+                            <div className='flex flex-col gap-6 justify-center items-center lg:items-start'>
 
-                        {/* Contact Me Button for large devices */}
+                                <motion.h3
+                                    initial={{ x: 200, opacity: 0 }}
+                                    whileInView={{ x: 0, opacity: 1 }}
+                                    transition={{ duration: 1, delay: .2 }}
+                                    viewport={{ once: true }}
+                                    className='text-2xl font-semibold mb-4 text-center lg:text-left'
+                                >
+                                    Full Stack Intern | Yolast <span className="text-neutral-400 text-lg">(May – July 2025)</span>
+                                </motion.h3>
+
+                                <motion.ul
+                                    initial={{ x: 200, opacity: 0 }}
+                                    whileInView={{ x: 0, opacity: 1 }}
+                                    transition={{ duration: 1, delay: .4 }}
+                                    viewport={{ once: true }}
+                                    className='list-disc list-inside text-xl font-light tracking-tight max-w-2xl mx-auto lg:mx-0 text-center lg:text-left space-y-3'
+                                >
+                                    <li>Designed and implemented end-to-end authentication systems for production-ready flows.</li>
+                                    <li>Built role-based authorization for multiple user types (users, affiliates, service providers, multi-level admins).</li>
+                                    <li>Developed secure flows including custom registration, Google OAuth, OTP-based reset password, and user data persistence.</li>
+                                    <li>Integrated Razorpay Payment Gateway to handle transactions, subscription logic, and order validations.</li>
+                                    <li>Managed and debugged complex application structures.</li>
+                                </motion.ul>
+
+                                <motion.p
+                                    initial={{ x: 200, opacity: 0 }}
+                                    whileInView={{ x: 0, opacity: 1 }}
+                                    transition={{ duration: 1, delay: .6 }}
+                                    viewport={{ once: true }}
+                                    className='italic text-lg text-green-400 mt-4 text-center lg:text-left'
+                                >
+                                    Key Impact: Strengthened auth security, streamlined user onboarding, and ensured secure payment handling.
+                                </motion.p>
+
+                            </div>
+                        </div>
+
+
+                        {/* Projects explore Button for large devices */}
                         <motion.div
                             initial={{ x: 200, opacity: 0 }}
                             whileInView={{ x: 0, opacity: 1 }}
