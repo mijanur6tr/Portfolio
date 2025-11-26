@@ -14,7 +14,7 @@ export const Education = (props) => {
                 whileInView={{ y: 0, opacity: 1 }}
                 transition={{ duration: 1, delay: .2 }}
                 viewport={{once:true}}
-        className='text-center my-20  text-4xl'>Education</motion.h2>
+        className='text-center mb-15   text-4xl'>Education</motion.h2>
     <div className='flex flex-col gap-8 justify-center px-8 lg:px-35 py-5  items-start font-light'>
 
         <motion.div

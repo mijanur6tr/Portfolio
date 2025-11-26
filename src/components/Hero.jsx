@@ -3,6 +3,7 @@ import profile from "../../public/profile.jpeg"
 import { HERO_CONTENT } from '../constants'
 import { motion } from "framer-motion"
 import { Link } from 'react-router-dom'
+import { FaWhatsapp } from 'react-icons/fa';
 
 /**
 * @function Hero
@@ -52,18 +53,22 @@ export const Hero = (props) => {
           {HERO_CONTENT}
         </motion.p>
 
-        <motion.div
-          variants={container(.9)}
-          viewport={{ once: true }}
-          className='mt-4 mx-auto   hidden lg:block'
-        >
-          <Link
-            to="/contact"
-            className="inline-block mt-2 px-10 py-2 bg-amber-600 text-white rounded-lg shadow-md hover:bg-amber-700 transition duration-300"
-          >
-            Contact With Me
-          </Link>
-        </motion.div>
+<motion.div
+  variants={container(0.9)}
+  viewport={{ once: true }}
+  className='mt-4 mx-auto hidden lg:flex'
+>
+  <a
+    href="https://wa.me/8801642674330?text=Hi%20Mijanur!%20I%20would%20like%20to%20discuss%20a%20project."
+    target="_blank"
+    rel="noopener noreferrer"
+    className="inline-flex items-center gap-3 px-4 py-3 hover:text-green-500 font-semibold rounded-lg border-2 border-white hover:border-green-600 text-white-300 transition duration-300"
+  >
+    <FaWhatsapp className="text-xl" />
+    Let's Discuss
+  </a>
+</motion.div>
+
 
       </motion.div>
 

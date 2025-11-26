@@ -16,7 +16,7 @@ const Projects = ({ limit }) => {
 
   return (
 
-    <div className="py-5 px-10 mb-10 lg:mb-15  lg:px-20 xl:px-30 min-h-screen">
+    <div className="py-5 px-10 mb-10   lg:px-20 xl:px-30 min-h-screen">
       <motion.h2
         initial={{ y: 45, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
@@ -33,39 +33,54 @@ const Projects = ({ limit }) => {
             transition={{ duration: 0.1, ease: "easeInOut" }}
             viewport={{ once: true }}
             key={project.id}
-            className="bg-white rounded-3xl shadow-lg overflow-hidden flex flex-col border border-gray-100 hover:shadow-2xl transition-all duration-300 p-5"
+            className=" rounded-xl shadow-lg overflow-hidden flex flex-col border border-gray-100 hover:shadow-2xl transition-all duration-300 p-5 "
           >
             {/* Image with soft bottom shadow */}
             <div className="relative">
               <img
                 src={project.image}
                 alt={project.title}
-                className="w-full h-52 object-cover rounded-2xl shadow-[0_8px_14px_-6px_rgba(0,0,0,0.15)]"
+                className="w-full h-52 object-cover rounded-xl shadow-[0_8px_14px_-6px_#11FFFF]"
               />
             </div>
 
             {/* Content */}
             <div className="mt-4 flex-1 flex flex-col justify-between">
-              <h3 className="text-xl font-semibold text-slate-800 mb-1">{project.title}</h3>
-              <p className="text-gray-500 tracking-tight text-sm mb-4 leading-relaxed">{project.cardDescription}</p>
+              <h3 className="text-xl font-semibold text-white mb-1">{project.title}</h3>
+              <p className="text-gray-200 tracking-tight text-sm mb-4 leading-relaxed">{project.cardDescription}</p>
 
-              <div className="flex justify-between mt-auto">
+              <div className="flex justify-between mt-auto gap-3">
+
+                {/* Detail Button */}
                 <Link
-                  to={`/projects/${project.id}`}                
-                  rel="noopener noreferrer"
-                  className="bg-gradient-to-r from-indigo-600 to-purple-600 text-white px-4 py-2 rounded-xl text-sm font-medium hover:opacity-90 transition"
+                  to={`/projects/${project.id}`}
+                  className="bg-gradient-to-r from-indigo-500 to-violet-800 text-white px-4 py-2 rounded-sm text-sm font-medium hover:opacity-90 transition"
                 >
                   Detail
                 </Link>
+
+                {/* Preview Button */}
                 <a
                   href={project.previewLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-gradient-to-r from-emerald-600 to-green-500 text-white px-4 py-2 rounded-xl text-sm font-medium hover:opacity-90 transition"
+                  className="bg-gradient-to-r from-emerald-500 to-teal-400 text-white px-4 py-2 rounded-sm text-sm font-medium hover:opacity-90 transition"
                 >
                   Preview
                 </a>
+
+                {/* GitHub Button */}
+                <a
+                  href={project.githubLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-gradient-to-r from-slate-700 to-[#11FFFF] text-white px-4 py-2 rounded-sm text-sm font-medium hover:opacity-90 transition"
+                >
+                  GitHub
+                </a>
+
               </div>
+
             </div>
           </motion.div>
 
@@ -92,7 +107,7 @@ const Projects = ({ limit }) => {
           >
             <Link
               to="/projects"
-              className="inline-block text-white px-4 py-2 rounded-xl bg-gradient-to-r from-amber-500 to-amber-700 hover:from-amber-600 hover:to-amber-800 transition-colors duration-300"
+              className="inline-block text-white px-4 py-2 rounded-xl bg-gradient-to-r from-slate-500 to-cyan-700 hover:from-slate-600 hover:to-amber-800 transition-colors duration-300"
 
             >
               See more

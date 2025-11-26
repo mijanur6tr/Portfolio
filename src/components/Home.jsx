@@ -5,6 +5,7 @@ import { Technologies } from './Technologies'
 import { Education } from './Education'
 import Projects from './Projects'
 import ScrollToTop from './ScrollTop'
+import { CoCurricular } from './Cocurricular'
 
 /**
 * @author
@@ -20,8 +21,10 @@ export const Home = (props) => {
           <Hero/>
           <About/>
           <Technologies/>
+          <Projects limit={6} />
           <Education/>
-          <Projects limit={3} />
+          <CoCurricular/>
+          
           <ScrollToTop/>
         </div>
       </div>
