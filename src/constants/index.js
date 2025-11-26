@@ -4,6 +4,7 @@ import tic from "../../public/tic.png";
 import kuetnote from "../../public/kuetnote.png";
 import KuetBuble from "../../public/KuetBuble.png";
 import Shuto from "../../public/Shuto-Shoilo.png";
+import JobHunt from "../../public/jobhunt.png";
 
 export const HERO_CONTENT = `I Build High-Impact, Fast, and Modern Web Solutions.From idea to launch, I craft scalable websites and full-stack applications that drive business results.
 Let’s create something your users will love. `;
@@ -86,14 +87,41 @@ export const projectData = [
     ],
   },
   {
-    id: 4,
+  id: 4,
+  title: "Job Hunt",
+  image: JobHunt, 
+  cardDescription:
+    "A platform for job seekers and recruiters to post, search, and apply for jobs efficiently with advanced search capabilities.",
+  description:
+    "Job Hunt is a dynamic job portal built for students and professionals to post and apply for jobs seamlessly. It leverages Next.js with server-side rendering for fast performance, Prisma ORM with PostgreSQL (hosted on Neon) for reliable database management, and advanced Prisma queries to allow searching jobs by title, company, or type. The platform ensures smooth user experience with robust authentication, clean UI built with Tailwind CSS, and deployment on Vercel for global accessibility.",
+  detailLink: "/projects/4",
+  previewLink: "https://job-hunt-seven-chi.vercel.app/", 
+  technologies: [
+    "Next.js (SSR && CSR)",
+    "TypeScript",
+    "Tailwind CSS",
+    "PostgreSQL",
+    "Prisma",
+    "Neon DB",
+    "Vercel",
+  ],
+  problems: [
+    "Implementing server-side rendering with Next.js for better SEO and performance",
+    "Designing advanced Prisma queries to filter jobs by name, company, and type",
+    "Ensuring smooth CRUD operations for job posts and applications",
+    "Maintaining secure and scalable database interactions with PostgreSQL and Prisma",
+  ],
+}
+,
+  {
+    id: 5,
     title: "Todo App",
     image: todo,
     cardDescription:
       "A simple and clean todo application designed to manage everyday tasks with categories and filters.",
     description:
       "A clean and minimalistic Todo application built to help users organize their daily tasks efficiently. It supports task categorization, filtering, and dynamic updates—making productivity simple and intuitive. This project was a hands-on introduction to React’s Context API, which I used to manage global state across components without prop drilling. It deepened my understanding of component-based architecture and scalable state management in React..",
-    detailLink: "/projects/4",
+    detailLink: "/projects/5",
     previewLink: "https://react-to-do-bice-five.vercel.app",
     technologies: ["React", "Context API", "Tailwind CSS"],
     problems: [
@@ -102,14 +130,14 @@ export const projectData = [
     ],
   },
   {
-    id: 5,
+    id: 6,
     title: "Currency Converter",
     image: currency,
     cardDescription:
       "A real-time currency conversion tool using exchange API to convert between global currencies instantly.",
     description:
       "A responsive and real-time currency conversion application that allows users to convert between global currencies instantly using up-to-date exchange rates. This project leverages a public Exchange Rate API to fetch live data and perform accurate conversions. Through this project, I gained practical experience in integrating APIs, handling asynchronous operations, and displaying real-time data in a user-friendly interface using React.",
-    detailLink: "/projects/5",
+    detailLink: "/projects/6",
     previewLink: "https://currency-converter-ivory-sigma.vercel.app",
     technologies: ["HTML", "CSS", "JavaScript", "ExchangeRate API"],
     problems: [
@@ -118,14 +146,14 @@ export const projectData = [
     ],
   },
   {
-    id: 6,
+    id: 7,
     title: "Tic-Tac-Toe Game",
     image: tic,
     cardDescription:
       "A two-player Tic Tac Toe game with a computer AI option, built using basic HTML, CSS, and JavaScript.",
     description:
       "A classic two-player Tic Tac Toe game built using HTML, CSS, and JavaScript, featuring both human-vs-human and human-vs-computer modes. Originally developed for fun, this project turned into a deep dive into game logic and decision-making. I implemented a simple yet effective AI opponent that can intelligently predict and counter the player's next move, making the gameplay more challenging and engaging. It sharpened my logical thinking and problem-solving skills in JavaScript.",
-    detailLink: "/projects/6",
+    detailLink: "/projects/7",
     previewLink: "https://tic-tac-toe-eosin-two.vercel.app/",
     technologies: ["HTML", "CSS", "JavaScript"],
     problems: [
