@@ -1,6 +1,6 @@
 import React from 'react'
 import { motion } from "framer-motion"
-import spectrumLogo from "../../public/spectrum.jpg"
+import spectrumLogo from "../../public/spectrum.png"
 import hackLogo from "../../public/hack.png"
 
 /**
