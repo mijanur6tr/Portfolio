@@ -1,7 +1,7 @@
 import React from 'react'
 import { motion } from "framer-motion"
-import spectrumLogo from "../../public/spectrum.jpg" // replace with actual path
-import hackLogo from "../../public/hack.png"         // replace with actual path
+import spectrumLogo from "../../public/spectrum.jpg"
+import hackLogo from "../../public/hack.png"
 
 /**
 * @function CoCurricular
@@ -20,7 +20,7 @@ export const CoCurricular = () => {
         Co-Curricular Activities
       </motion.h2>
 
-      <div className='flex flex-col gap-12 justify-center px-8 lg:px-20 py-5'>
+      <div className='flex flex-col gap-12 justify-center px-8 lg:px-35 py-5'>
 
         {/* Spectrum */}
         <motion.div
@@ -28,7 +28,7 @@ export const CoCurricular = () => {
           initial={{ x: -100, opacity: 0 }}
           transition={{ duration: 1 }}
           viewport={{ once: true }}
-          className='flex flex-col lg:flex-row gap-6 items-center lg:items-start relative'
+          className='flex flex-col-reverse lg:flex-row gap-6 items-center lg:items-start relative'
         >
           {/* Left Column: Info */}
           <div className='flex-1 relative text-base lg:text-lg'>
@@ -40,7 +40,7 @@ export const CoCurricular = () => {
           </div>
 
           {/* Right Column: Logo */}
-          <div className='w-24 lg:w-52 flex justify-center items-center'>
+          <div className='w-62 lg:52 flex justify-center items-center mb-4 lg:mb-0'>
             <img src={spectrumLogo} alt="Spectrum Logo" className='w-full h-auto rounded-lg shadow-md' />
           </div>
         </motion.div>
@@ -51,7 +51,7 @@ export const CoCurricular = () => {
           initial={{ x: -100, opacity: 0 }}
           transition={{ duration: 1, delay: 0.2 }}
           viewport={{ once: true }}
-          className='flex flex-col lg:flex-row gap-6 items-center lg:items-start relative'
+          className='flex flex-col-reverse lg:flex-row gap-6 items-center lg:items-start relative'
         >
           {/* Left Column: Info */}
           <div className='flex-1 relative text-base lg:text-lg'>
@@ -63,7 +63,7 @@ export const CoCurricular = () => {
           </div>
 
           {/* Right Column: Logo */}
-          <div className='w-24 lg:w-42 flex justify-center items-center'>
+          <div className='w-42 flex justify-center items-center mb-4 lg:mb-0'>
             <img src={hackLogo} alt="HACK Logo" className='w-full h-auto rounded-lg shadow-md' />
           </div>
         </motion.div>
