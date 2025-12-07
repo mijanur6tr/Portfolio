@@ -20,8 +20,8 @@ export const Home = (props) => {
         <div className='container mx-auto px-8'>
           <Hero/>
           <About/>
+           <Projects limit={6} />
           <Technologies/>
-          <Projects limit={6} />
           <Education/>
           <CoCurricular/>
           

@@ -37,7 +37,7 @@ export const Technologies = () => {
         whileInView={{ x: 0 }}
         transition={{ duration: 1 }}
         viewport={{ once: true }}
-        className='flex flex-wrap justify-center items-center gap-4 mb-10'
+        className='flex flex-wrap justify-center items-center gap-2 lg:gap-4 mb-10'
       >
         <Tech icon={<FaHtml5 />} color="text-orange-600" duration={2.2} />
         <Tech icon={<FaCss3Alt />} color="text-blue-600" duration={3.0} />
@@ -55,7 +55,7 @@ export const Technologies = () => {
         whileInView={{ x: 0 }}
         transition={{ duration: 1 }}
         viewport={{ once: true }}
-        className='flex flex-wrap justify-center items-center gap-4 mb-10'
+        className='flex flex-wrap justify-center items-center gap-2 lg:gap-4 mb-10'
       >
         <Tech icon={<FaNodeJs />} color="text-green-600" duration={2.2} />
         <Tech icon={<SiExpress />} color="text-gray-400" duration={2.0} />
@@ -72,7 +72,7 @@ export const Technologies = () => {
         whileInView={{ x: 0 }}
         transition={{ duration: 1 }}
         viewport={{ once: true }}
-        className='flex flex-wrap justify-center items-center gap-4 mb-10'
+        className='flex flex-wrap justify-center items-center gap-2 lg:gap-4 mb-10'
       >
         <Tech icon={<SiMongodb />} color="text-green-600" duration={2.0} />
         <Tech icon={<SiMongoose />} color="text-red-500" duration={2.4} />
@@ -87,7 +87,7 @@ export const Technologies = () => {
         whileInView={{ x: 0 }}
         transition={{ duration: 1 }}
         viewport={{ once: true }}
-        className='flex flex-wrap justify-center items-center gap-4 mb-10'
+        className='flex flex-wrap justify-center items-center gap-2 lg:gap-4 mb-10'
       >
         <Tech icon={<SiFirebase />} color="text-yellow-500" duration={2.2} />
         <Tech icon={<SiAppwrite />} color="text-pink-500" duration={2.0} />
@@ -104,7 +104,7 @@ export const Technologies = () => {
         whileInView={{ x: 0 }}
         transition={{ duration: 1 }}
         viewport={{ once: true }}
-        className='flex flex-wrap justify-center items-center gap-4'
+        className='flex flex-wrap justify-center items-center gap-2 lg:gap-4'
       >
         <Tech icon={<SiVercel />} color="text-white" duration={2.0} />
         <Tech icon={<SiRender />} color="text-blue-400" duration={2.6} />

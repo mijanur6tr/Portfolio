@@ -14,7 +14,7 @@ export const About = (props) => {
                 viewport={{ once: true }}
                 className='text-center mb-15 my-20 text-4xl'
             >
-                My <span className='text-neutral-300'>Experience</span>
+                Freelance <span className='text-neutral-300'>Projects</span>
             </motion.h2>
 
             <div className='flex flex-wrap-reverse'>
@@ -47,7 +47,7 @@ export const About = (props) => {
                         <div className="w-1 bg-orange-500 rounded-full mr-6"></div>
                         <div className="flex-1">
                             <h3 className="text-2xl font-semibold mb-4">
-                                Full-Stack Intern | Yolast
+                                 Yolast
                                 <span className="text-neutral-400 text-lg ml-2">(May – July 2025)</span>
                             </h3>
                             <ul className="list-disc list-inside text-lg font-light tracking-tight space-y-2">

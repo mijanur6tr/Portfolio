@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import logo from '../../public/logo.png';
-import { FaGithub, FaLinkedin, FaTwitter, FaInstagram, FaBars, FaTimes } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaYoutube, FaTwitter, FaInstagram, FaBars, FaTimes } from 'react-icons/fa';
 import { NavLink,Link } from 'react-router-dom';
 
 export const Navbar = () => {
@@ -41,6 +41,9 @@ export const Navbar = () => {
             <a href="https://x.com/mijanur6tr" target="_blank" rel="noreferrer">
               <FaTwitter className="hover:text-orange-400 transition" />
             </a>
+            <a href="https://www.youtube.com/@DecodeWithMijan" target="_blank" rel="noreferrer">
+              <FaYoutube className="hover:text-orange-400 transition" />
+            </a>
           </div>
         </div>
 
@@ -58,6 +61,9 @@ export const Navbar = () => {
           </a>
           <a href="https://x.com/mijanur6tr" target="_blank" rel="noreferrer">
             <FaTwitter className="hover:text-orange-400 transition" />
+          </a>
+          <a href="https://www.youtube.com/@DecodeWithMijan" target="_blank" rel="noreferrer">
+            <FaYoutube className="hover:text-orange-400 transition" />
           </a>
 
           {/* Hamburger */}
