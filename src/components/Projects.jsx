@@ -1,5 +1,5 @@
 import React from 'react';
-import { projectData } from '../constants';
+import { projectData } from '../assets';
 import { motion, useAnimation } from "framer-motion";
 import { Link } from "react-router-dom";
 // import { useEffect } from "react";
@@ -74,7 +74,7 @@ const Projects = ({ limit }) => {
                   href={project.githubLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-gradient-to-r from-slate-700 to-[#11FFFF] text-white px-4 py-2 rounded-sm text-sm font-medium hover:opacity-90 transition"
+                  className="bg-gradient-to-r from-cyan-700 to-[#11FFFF] text-white px-4 py-2 rounded-sm text-sm font-medium hover:opacity-90 transition"
                 >
                   GitHub
                 </a>

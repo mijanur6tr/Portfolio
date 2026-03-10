@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { projectData } from '../constants';
+import { projectData } from '../assets';
 
 const Details = () => {
   const { id } = useParams();

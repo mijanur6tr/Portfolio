@@ -1,11 +1,13 @@
-import todo from "../../public/todo.png";
-import currency from "../../public/currency.png";
-import tic from "../../public/tic.png";
-import kuetnote from "../../public/kuetnote.png";
-import KuetBuble from "../../public/KuetBuble.png";
-import Shuto from "../../public/Shuto-Shoilo.png";
-import JobHunt from "../../public/jobhunt.png";
-import Clubby from "../../public/Clubby.png"
+import todo from "./todo.png";
+import currency from "./currency.png";
+import tic from "./tic.png";
+import kuetnote from "./KuetNote.png";
+import KuetBuble from "./KuetBuble.png";
+import Shuto from "./Shuto-Shoilo.png";
+import JobHunt from "./jobhunt.png";
+import Clubby from "./Clubby.png";
+import SpectrumWeb from "./spectrumweb.png";
+import Agro from "./agro.png";
 
 export const HERO_CONTENT = `I Build High-Impact, Fast, and Modern Web Solutions.From idea to launch, I craft scalable websites and full-stack applications that drive business results.
 Let’s create something your users will love. `;
@@ -47,16 +49,47 @@ export const projectData = [
     "Production failure of the resume review feature due to pdf-parse incompatibility with serverless environments"
   ],
 },
+ {
+  id: 2,
+  title: "Agro Bot",
+  image: Agro,
+  cardDescription:
+    "AI-powered agriculture assistant that answers farming queries using Retrieval Augmented Generation (RAG).",
+
+  description:
+    "Agro Bot is an AI-powered agriculture assistant that helps farmers and users get accurate answers to farming-related questions. The system uses a Retrieval Augmented Generation (RAG) pipeline where agriculture knowledge sources are scraped, processed, converted into vector embeddings, and stored in AstraDB vector database. When a user asks a question, the system retrieves the most relevant documents through semantic search and sends them to an LLM to generate context-aware answers. Built with a simple chat interface, Agro Bot demonstrates practical implementation of vector databases, semantic retrieval, and AI-powered knowledge systems.",
+
+  detailLink: "/projects/2",
+  previewLink: "https://agro-bot-delta.vercel.app/",
+  githubLink: "https://github.com/mijanur6tr/Agro-Bot",
+
+  technologies: [
+    "Next.js",
+    "TypeScript",
+    "Tailwind CSS",
+    "AstraDB Vector Database",
+    "LangChain",
+    "RAG Architecture",
+    "Gemini Embedding Model and LLM"
+  ],
+
+  problems: [
+    "Building an efficient RAG pipeline for retrieving relevant agriculture knowledge",
+    "Generating high-quality vector embeddings from scraped documents",
+    "Implementing semantic search using AstraDB vector database",
+    "Managing context retrieval to improve LLM response accuracy"
+  ],
+},
 
   {
-    id: 2,
+    id: 3,
     title: "KuetNote",
     image: kuetnote,
     cardDescription:
       "A thought-sharing platform for the alumni and students of KUET to exchange experiences, career insights, and helpful resources.",
     description:
       "KUETNote is a collaborative web platform built to simplify academic life for students of KUET. It allows students to easily share, access, and organize course notes, question papers, and study resources by department and academic year. Designed with a clean UI and intuitive navigation, KUETNote enhances peer-to-peer learning and promotes a culture of open knowledge sharing within the university. The project showcases dynamic routing, file upload capabilities, and user-friendly categorization—all developed using React, Tailwind CSS, and Appwrite for backend services.",
-    detailLink: "/projects/2",
+    detailLink: "/projects/3",
     previewLink: "https://kuet-note.vercel.app/",
     githubLink:"https://github.com/mijanur6tr/KuetNote",
     technologies: ["React", "Tailwind CSS", "Appwrite"],
@@ -66,14 +99,46 @@ export const projectData = [
     ],
   },
   {
-    id: 3,
+  id: 4,
+  title: "Spectrum – Official Website",
+  image: SpectrumWeb,
+  cardDescription:
+    "Official website for Spectrum, a professional skill development club of KUET, showcasing activities, events, and community initiatives.",
+
+  description:
+    "Spectrum Official Website is a modern web platform built to represent Spectrum, a professional skill development club at KUET. The platform highlights the club’s mission, events, and initiatives while providing a structured interface for members and visitors to explore activities and updates. Designed with a responsive UI and clean component architecture, the website focuses on accessibility, performance, and clear content presentation. Built using modern frontend technologies, the project demonstrates practical experience in designing scalable and maintainable web interfaces for organizations.",
+
+  detailLink: "/projects/4",
+  previewLink: "https://spectrum-kuet.com/",
+  githubLink: "/projects/4",
+
+  technologies: [
+    "React",
+    "Tailwind CSS",
+    "TypeScript",
+    "Express.js",
+    "MongoDB",
+    "Cloudinary",
+    "Vercel",
+  ],
+
+  problems: [
+    "GitHub project is private, not available for public viewing",
+    "Complete Admin panel integration for proper control over frontend",
+    "Structuring reusable components for different website sections",
+    "Ensuring performance optimization and smooth navigation",
+    "Continuous integarion and deployment setup for seamless updates",
+  ],
+},
+  {
+    id: 5,
     title: "Shuto-Shoilo",
     image: Shuto,
     cardDescription:
       "A full-stack eCommerce platform designed to deliver a seamless shopping experience with robust cart, checkout, and order management features.",
     description:
       "ShutoShoilo is a full-stack MERN eCommerce application built for a smooth online shopping journey. It provides responsive UI, secure authentication, and dynamic product management. With features like cart, checkout, and hassle-free admin controls, the platform ensures efficient handling of both customer and admin operations. Designed with React and Tailwind CSS for modern UI, and powered by Node.js, Express.js, and MongoDB for backend scalability, ShutoShoilo demonstrates clean architecture and practical use of authentication and state management.",
-    detailLink: "/projects/3",
+    detailLink: "/projects/5",
     previewLink: "https://shuto-shoilo-frontend.vercel.app/",
     githubLink:"https://github.com/mijanur6tr/Shuto-Shoilo-Frontend",
     technologies: [
@@ -91,41 +156,16 @@ export const projectData = [
       "Structuring admin panel for product and order management",
     ],
   },
+  
   {
-    id: 4,
-    title: "KuetBuble",
-    image: KuetBuble,
-    cardDescription:
-      "An AI-integrated platform enabling KUET students to share anonymous messages securely engaged through intelligent suggestions.",
-    description:
-      "KuetBubble is an AI-powered anonymous messaging platform designed exclusively for KUET students. The platform allows users to share messages in a secure and private environment, while AI-driven suggestions enhance interaction and engagement. With NextAuth authentication ensuring safe sign-in and session management, and a clean UI built with Next.js, Tailwind CSS, and TypeScript, KuetBubble demonstrates the integration of AI in social platforms along with strong validation and seamless user flow.",
-    detailLink: "/projects/4",
-    previewLink: "https://kuet-bubble.vercel.app/",
-    githubLink:"https://github.com/mijanur6tr/KuetBubble",
-    technologies: [
-      "Next.js",
-      "TypeScript",
-      "Tailwind CSS",
-      "MongoDB",
-      "React Hook Form",
-      "Zod",
-      "NextAuth",
-    ],
-    problems: [
-      "Integrating AI to generate meaningful and engaging message suggestions",
-      "Ensuring security and anonymity while maintaining smooth user flow",
-      "Implementing robust validation with React Hook Form and Zod",
-    ],
-  },
-  {
-  id: 5,
+  id: 6,
   title: "Job Hunt",
   image: JobHunt, 
   cardDescription:
     "A platform for job seekers and recruiters to post, search, and apply for jobs efficiently with advanced search capabilities.",
   description:
     "Job Hunt is a dynamic job portal built for students and professionals to post and apply for jobs seamlessly. It leverages Next.js with server-side rendering for fast performance, Prisma ORM with PostgreSQL (hosted on Neon) for reliable database management, and advanced Prisma queries to allow searching jobs by title, company, or type. The platform ensures smooth user experience with robust authentication, clean UI built with Tailwind CSS, and deployment on Vercel for global accessibility.",
-  detailLink: "/projects/5",
+  detailLink: "/projects/6",
   previewLink: "https://job-hunt-seven-chi.vercel.app/", 
   githubLink:"https://github.com/mijanur6tr/job-hunt",
   technologies: [
@@ -143,17 +183,44 @@ export const projectData = [
     "Ensuring smooth CRUD operations for job posts and applications",
     "Maintaining secure and scalable database interactions with PostgreSQL and Prisma",
   ],
-}
-,
+},
+
+{
+    id: 7,
+    title: "KuetBuble",
+    image: KuetBuble,
+    cardDescription:
+      "An AI-integrated platform enabling KUET students to share anonymous messages securely engaged through intelligent suggestions.",
+    description:
+      "KuetBubble is an AI-powered anonymous messaging platform designed exclusively for KUET students. The platform allows users to share messages in a secure and private environment, while AI-driven suggestions enhance interaction and engagement. With NextAuth authentication ensuring safe sign-in and session management, and a clean UI built with Next.js, Tailwind CSS, and TypeScript, KuetBubble demonstrates the integration of AI in social platforms along with strong validation and seamless user flow.",
+    detailLink: "/projects/7",
+    previewLink: "https://kuet-bubble.vercel.app/",
+    githubLink:"https://github.com/mijanur6tr/KuetBubble",
+    technologies: [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "MongoDB",
+      "React Hook Form",
+      "Zod",
+      "NextAuth",
+    ],
+    problems: [
+      "Integrating AI to generate meaningful and engaging message suggestions",
+      "Ensuring security and anonymity while maintaining smooth user flow",
+      "Implementing robust validation with React Hook Form and Zod",
+    ],
+  },
+
   {
-    id: 6,
+    id: 8,
     title: "Todo App",
     image: todo,
     cardDescription:
       "A simple and clean todo application designed to manage everyday tasks with categories and filters.",
     description:
       "A clean and minimalistic Todo application built to help users organize their daily tasks efficiently. It supports task categorization, filtering, and dynamic updates—making productivity simple and intuitive. This project was a hands-on introduction to React’s Context API, which I used to manage global state across components without prop drilling. It deepened my understanding of component-based architecture and scalable state management in React..",
-    detailLink: "/projects/6",
+    detailLink: "/projects/8",
     previewLink: "https://react-to-do-bice-five.vercel.app",
     githubLink:"https://github.com/mijanur6tr/React-ToDo",
     technologies: ["React", "Context API", "Tailwind CSS"],
@@ -163,14 +230,14 @@ export const projectData = [
     ],
   },
   {
-    id: 7,
+    id: 9,
     title: "Currency Converter",
     image: currency,
     cardDescription:
       "A real-time currency conversion tool using exchange API to convert between global currencies instantly.",
     description:
       "A responsive and real-time currency conversion application that allows users to convert between global currencies instantly using up-to-date exchange rates. This project leverages a public Exchange Rate API to fetch live data and perform accurate conversions. Through this project, I gained practical experience in integrating APIs, handling asynchronous operations, and displaying real-time data in a user-friendly interface using React.",
-    detailLink: "/projects/7",
+    detailLink: "/projects/9",
     previewLink: "https://currency-converter-ivory-sigma.vercel.app",
     githubLink:"https://github.com/mijanur6tr/Currency-Converter",
     technologies: ["HTML", "CSS", "JavaScript", "ExchangeRate API"],
@@ -180,14 +247,14 @@ export const projectData = [
     ],
   },
   {
-    id: 8,
+    id: 10,
     title: "Tic-Tac-Toe Game",
     image: tic,
     cardDescription:
       "A two-player Tic Tac Toe game with a computer AI option, built using basic HTML, CSS, and JavaScript.",
     description:
       "A classic two-player Tic Tac Toe game built using HTML, CSS, and JavaScript, featuring both human-vs-human and human-vs-computer modes. Originally developed for fun, this project turned into a deep dive into game logic and decision-making. I implemented a simple yet effective AI opponent that can intelligently predict and counter the player's next move, making the gameplay more challenging and engaging. It sharpened my logical thinking and problem-solving skills in JavaScript.",
-    detailLink: "/projects/8",
+    detailLink: "/projects/10",
     previewLink: "https://tic-tac-toe-eosin-two.vercel.app/",
     technologies: ["HTML", "CSS", "JavaScript"],
     problems: [

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import logo from '../../public/logo.png';
+import logo from '../assets/logo.png';
 import { FaGithub, FaLinkedin, FaYoutube, FaTwitter, FaInstagram, FaBars, FaTimes } from 'react-icons/fa';
 import { NavLink,Link } from 'react-router-dom';
 

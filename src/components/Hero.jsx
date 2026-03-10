@@ -1,6 +1,6 @@
 import React from 'react'
-import profile from "../../public/profile.jpeg"
-import { HERO_CONTENT } from '../constants'
+import profile from "../assets/profile.jpeg"
+import { HERO_CONTENT } from '../assets'
 import { motion } from "framer-motion"
 import { Link } from 'react-router-dom'
 import { FaWhatsapp } from 'react-icons/fa';

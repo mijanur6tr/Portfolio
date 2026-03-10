@@ -1,7 +1,7 @@
 import React from 'react'
 import { motion } from "framer-motion"
-import spectrumLogo from "../../public/spectrum.png"
-import hackLogo from "../../public/hack.png"
+import spectrumLogo from "../assets/spectrum.png"
+import hackLogo from "../assets/hack.png"
 
 /**
 * @function CoCurricular
