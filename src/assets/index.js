@@ -212,62 +212,6 @@ export const projectData = [
     ],
   },
 
-  {
-    id: 8,
-    title: "Todo App",
-    image: todo,
-    cardDescription:
-      "A simple and clean todo application designed to manage everyday tasks with categories and filters.",
-    description:
-      "A clean and minimalistic Todo application built to help users organize their daily tasks efficiently. It supports task categorization, filtering, and dynamic updates—making productivity simple and intuitive. This project was a hands-on introduction to React’s Context API, which I used to manage global state across components without prop drilling. It deepened my understanding of component-based architecture and scalable state management in React..",
-    detailLink: "/projects/8",
-    previewLink: "https://react-to-do-bice-five.vercel.app",
-    githubLink:"https://github.com/mijanur6tr/React-ToDo",
-    technologies: ["React", "Context API", "Tailwind CSS"],
-    problems: [
-      "State management across multiple components",
-      "Building custom input forms with validation",
-    ],
-  },
-  {
-    id: 9,
-    title: "Currency Converter",
-    image: currency,
-    cardDescription:
-      "A real-time currency conversion tool using exchange API to convert between global currencies instantly.",
-    description:
-      "A responsive and real-time currency conversion application that allows users to convert between global currencies instantly using up-to-date exchange rates. This project leverages a public Exchange Rate API to fetch live data and perform accurate conversions. Through this project, I gained practical experience in integrating APIs, handling asynchronous operations, and displaying real-time data in a user-friendly interface using React.",
-    detailLink: "/projects/9",
-    previewLink: "https://currency-converter-ivory-sigma.vercel.app",
-    githubLink:"https://github.com/mijanur6tr/Currency-Converter",
-    technologies: ["HTML", "CSS", "JavaScript", "ExchangeRate API"],
-    problems: [
-      "Fetching dynamic data from third-party APIs",
-      "Handling asynchronous loading and error states",
-    ],
-  },
-  {
-    id: 10,
-    title: "Tic-Tac-Toe Game",
-    image: tic,
-    cardDescription:
-      "A two-player Tic Tac Toe game with a computer AI option, built using basic HTML, CSS, and JavaScript.",
-    description:
-      "A classic two-player Tic Tac Toe game built using HTML, CSS, and JavaScript, featuring both human-vs-human and human-vs-computer modes. Originally developed for fun, this project turned into a deep dive into game logic and decision-making. I implemented a simple yet effective AI opponent that can intelligently predict and counter the player's next move, making the gameplay more challenging and engaging. It sharpened my logical thinking and problem-solving skills in JavaScript.",
-    detailLink: "/projects/10",
-    previewLink: "https://tic-tac-toe-eosin-two.vercel.app/",
-    technologies: ["HTML", "CSS", "JavaScript"],
-    problems: [
-      "Designing a basic AI for computer opponent",
-      "Game logic implementation and win detection",
-    ],
-  },
-
-  // add more projects here
 ];
 
-// export const CONTACT = {
-//   address: "767 Fifth Avenue, New York, NY 10153 ",
-//   phoneNo: "+12 4555 666 00 ",
-//   email: "me@example.com",
-// };
+
