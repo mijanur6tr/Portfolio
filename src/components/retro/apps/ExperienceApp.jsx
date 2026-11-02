@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import spectrumLogo from '../../../assets/spectrum.png';
-import hackLogo from '../../../assets/hack.png';
+const spectrumLogo = '/images/spectrum.png';
+const hackLogo = '/images/hack.png';
 import { useWindowManager } from '../../../context/WindowManagerContext';
 import { FaBriefcase, FaGraduationCap, FaUsers, FaPrint } from 'react-icons/fa';
 
@@ -288,3 +288,4 @@ export const ExperienceApp = () => {
     </div>
   );
 };
+

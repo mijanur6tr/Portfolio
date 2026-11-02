@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import resumePdf from '../../../assets/Mijanur_Rahman_Resume.pdf';
+const resumePdf = '/images/Mijanur_Rahman_Resume.pdf';
 import { ResumePdfIcon } from '../RetroIcons';
 import { FaDownload, FaExternalLinkAlt, FaFilePdf, FaEye } from 'react-icons/fa';
 

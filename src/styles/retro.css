@@ -16,14 +16,13 @@
   --win-font-mono: "Consolas", "Lucida Console", "Courier New", monospace;
 }
 
-body, html {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
+/* Scoped to retro modal or when retro active */
+body.in-retro-mode {
+  overflow: hidden !important;
+}
+
+.retro-container {
   font-family: var(--win-font);
-  background-color: var(--win-teal);
   user-select: none;
   -webkit-font-smoothing: antialiased;
 }

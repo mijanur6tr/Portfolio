@@ -1,6 +1,6 @@
 import React from 'react';
-import aboutImg from '../../../assets/about.jpeg';
-import resumePdf from '../../../assets/Mijanur_Rahman_Resume.pdf';
+const aboutImg = '/images/about.jpeg';
+const resumePdf = '/images/Mijanur_Rahman_Resume.pdf';
 import { useWindowManager } from '../../../context/WindowManagerContext';
 import { FaGithub, FaLinkedin, FaWhatsapp } from 'react-icons/fa';
 
@@ -151,3 +151,4 @@ export const AboutApp = () => {
     </div>
   );
 };
+

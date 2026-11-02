@@ -1,6 +1,6 @@
 import React from 'react';
 import { useWindowManager } from '../../../context/WindowManagerContext';
-import profileImg from '../../../assets/profile.jpeg';
+const profileImg = '/images/profile.jpeg';
 import {
   FolderProjectsIcon,
   SkillsSetupIcon,
@@ -125,3 +125,4 @@ export const WelcomeApp = () => {
     </div>
   );
 };
+

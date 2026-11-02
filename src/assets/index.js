@@ -1,13 +1,13 @@
-import todo from "./todo.png";
-import currency from "./currency.png";
-import tic from "./tic.png";
-import kuetnote from "./KuetNote.png";
-import KuetBuble from "./KuetBuble.png";
-import Shuto from "./Shuto-Shoilo.png";
-import JobHunt from "./jobhunt.png";
-import Clubby from "./Clubby.png";
-import SpectrumWeb from "./spectrumweb.png";
-import Agro from "./agro.png";
+const todo = "/images/todo.png";
+const currency = "/images/currency.png";
+const tic = "/images/tic.png";
+const kuetnote = "/images/KuetNote.png";
+const KuetBuble = "/images/KuetBuble.png";
+const Shuto = "/images/Shuto-Shoilo.png";
+const JobHunt = "/images/jobhunt.png";
+const Clubby = "/images/Clubby.png";
+const SpectrumWeb = "/images/spectrumweb.png";
+const Agro = "/images/agro.png";
 
 export const HERO_CONTENT = `I Build High-Impact, Fast, and Modern Web Solutions.From idea to launch, I craft scalable websites and full-stack applications that drive business results.
 Let’s create something your users will love. `;
@@ -213,5 +213,7 @@ export const projectData = [
   },
 
 ];
+
+
 
 
